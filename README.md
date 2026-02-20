@@ -86,9 +86,11 @@ These concepts form the foundation of Rust programming and help structure reusab
 src/
  └── Basics/
       └── syntax/
-           ├── 1_variables.rs
-           ├── 2_constants.rs
-           └── 3_data_types.rs
+           ├── variables.rs
+           └── data_types.rs
+           |__ controlFlow
+                    |___conditions.rs
+                    |___loops.rs
 
 📖 Syntax and Semantics
 
@@ -96,8 +98,6 @@ Rust’s syntax is clean and expressive, while its semantics ensure strict safet
 
 Each file inside the Basics/syntax folder demonstrates:
 
-1_variables.rs → Variable declaration and mutability
+1.variables.rs → Variable declaration and mutability
 
-2_constants.rs → Defining and using constants
-
-3_data_types.rs → Primitive and compound data types
+2.data_types.rs → Primitive and compound data types
