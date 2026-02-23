@@ -1,0 +1,30 @@
+[Mobile App Client]
+       |
+       | 1️⃣ Device Auth / WebAuthn / Biometric
+       | (Login / Device verification)
+       v
+[Auth Service / OAuth 2.1 Server]
+       |
+       | 2️⃣ Issue Short-lived Access Token (JWT / Paseto)
+       | 3️⃣ Optional Refresh Token (stored securely, rotated)
+       v
+[API Gateway / Reverse Proxy]
+       |
+       | 4️⃣ HTTPS + Optional mTLS
+       | 5️⃣ Rate Limiting / WAF / IP Filtering
+       | 6️⃣ Request Schema Validation (Zod / Pydantic / Fastify Schema)
+       v
+[Microservices / Backend APIs]
+       |
+       | 7️⃣ Authentication Validation (JWT / OAuth token check)
+       | 8️⃣ Authorization / RBAC (Role & Permission check)
+       | 9️⃣ Business Logic Validation (DB rules, constraints)
+       v
+[Database / External Services]
+       |
+       | 🔒 Data stored securely
+       | 📝 Logging via Pino / OpenTelemetry / Sentry
+       v
+[Analytics / Monitoring / Observability]
+       | 
+       | Real-time metrics, alerts, audits
